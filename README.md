@@ -57,4 +57,10 @@ This is a synthetic learning project, not client work or evidence of real busine
 | Returned lines | 186 |
 | Loss-making lines | 61 |
 
-The SQL, Excel and Power BI portfolio projects intentionally reuse the same fictional business, but each is self-contained and demonstrates a different tool. Do not describe the three as separate client engagements.
+## One case study, three tools
+
+These three projects use the same fictional retail dataset to show different tools. Each repository can be explored independently.
+
+- [SQL: customer and sales analysis](https://github.com/ashikiqbal-work/sql-retail-analysis)
+- [Excel: sales dashboard](https://github.com/ashikiqbal-work/excel-sales-dashboard)
+- [Power BI: profitability report](https://github.com/ashikiqbal-work/powerbi-profitability-report)
