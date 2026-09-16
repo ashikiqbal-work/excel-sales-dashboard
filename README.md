@@ -1,2 +1,60 @@
-# excel-sales-dashboard
-Excel portfolio: formula-driven retail dashboard, category and monthly analysis, native charts, and transaction detail.
+# Excel retail sales dashboard
+
+A formula-driven sales workbook for reviewing category profitability and monthly performance, with a filterable transaction table and editable charts.
+
+![Excel dashboard](dashboard-preview.png)
+
+## Open the project
+
+Download the repository ZIP, extract it and open **Retail_Analytics.xlsx** in Excel. No macros, external links or additional data connection are required.
+
+## Workbook contents
+
+- **Dashboard:** revenue, gross profit, weighted margin, a source order-count control, category comparisons, monthly results and two native charts.
+- **Sales:** all 3,538 records, typed dates and numbers, filter buttons, frozen headers, and formula-based net revenue and gross profit. Loss-making lines are highlighted.
+
+## Skills demonstrated
+
+Excel tables, `IF`, `SUM`, `SUMIF`, `IFERROR`, relative and absolute references, monthly growth, weighted margin, conditional formatting, number formats and native charts linked to calculated ranges.
+
+## How to explore
+
+1. Compare category revenue with margin. Furniture leads revenue, while Office Supplies has the highest margin.
+2. Inspect the monthly revenue series and month-over-month growth.
+3. Filter the Sales table to Furniture and examine negative gross-profit rows.
+4. In a disposable copy, increase a non-returned line's Gross sales by $100. Net revenue and gross profit should both rise by $100. Restore the input afterward.
+
+The dashboard covers the entire dataset. Sales-table filters do not change its totals. Existing input edits recalculate, but formulas and charts are bounded to this 2024–2025 dataset. Adding records or years requires extending formula ranges and chart sources and updating the distinct-order control. The order count is labeled as a fixed source control.
+
+## Validation
+
+Formula recalculation and a representative $100 input change were checked. Revenue and gross profit reconcile to independently computed SQL totals to the cent. Both sheets were rendered and visually checked. Excel desktop recalculation itself has not been independently tested.
+
+## Interpretation
+
+Use category margin and revenue together. A high percentage on a small revenue base does not necessarily create the largest profit contribution. Monthly fluctuations are synthetic observations and are not a real seasonal forecast.
+
+## Dataset and definitions
+
+This is a synthetic learning project, not client work or evidence of real business impact. It uses seed 42 to generate 1,800 orders, 3,538 order lines, 200 customer records and six products across 2024–2025. All monetary figures are USD. Customer names are fictional placeholders. Order dates and purchase choices are randomized. These results describe this sample only.
+
+- **Grain:** one order line. Order count uses distinct order IDs.
+- **Net revenue:** quantity × unit price, less line discount, with returned lines set to zero.
+- **Gross profit:** net revenue less retained-product cost. Returned lines reverse both revenue and cost, assuming full cost recovery.
+- **Gross margin:** total gross profit / total net revenue. It is not the average of line margins.
+- **Return rate:** returned lines / all lines, not returned orders / all orders.
+- Excludes taxes, delivery fees, overhead, return handling and damaged inventory.
+
+## Control totals
+
+| Metric | Value |
+|---|---:|
+| Net revenue | $1,179,262.25 |
+| Gross profit | $356,734.25 |
+| Gross margin | 30.2506% |
+| Distinct orders | 1,800 |
+| Order lines | 3,538 |
+| Returned lines | 186 |
+| Loss-making lines | 61 |
+
+The SQL, Excel and Power BI portfolio projects intentionally reuse the same fictional business, but each is self-contained and demonstrates a different tool. Do not describe the three as separate client engagements.
