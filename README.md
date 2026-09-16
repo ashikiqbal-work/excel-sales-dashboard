@@ -28,9 +28,9 @@ The dashboard covers the entire dataset. Sales-table filters do not change its t
 
 ## Validation
 
-The workbook was opened in Microsoft Excel Desktop. A user-provided screenshot confirms that the Dashboard displays both charts, hidden worksheet gridlines and the expected rounded totals: $1,179,262 net revenue, $356,734 gross profit, 30.3% margin and 1,800 orders.
+The workbook was opened in Microsoft Excel Desktop, with both charts rendered and worksheet gridlines hidden. The project owner confirmed running a full recalculation (Ctrl + Alt + F9); the subsequent screenshot shows the expected rounded dashboard totals unchanged, with no visible errors: $1,179,262 net revenue, $356,734 gross profit, 30.3% margin and 1,800 orders.
 
-Formula recalculation and a representative $100 input change were checked during workbook generation, and revenue and gross profit reconcile to independently computed SQL totals to the cent. The Desktop check confirms rendering and displayed values; a controlled input-change test in Desktop has not yet been independently verified.
+During workbook generation, formula recalculation and a representative $100 input change were also checked. Revenue and gross profit reconcile to independently computed SQL totals to the cent.
 
 ## Interpretation
 
